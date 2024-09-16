@@ -6,11 +6,7 @@ html {
 
 body {
   min-height: 100%;
-  background-color: #0c0c0c;
-}
-
-
-body {
+  background-color: #3d3935;
   text-align: center;
   padding: 20px 0;
   min-width: 600px;
@@ -18,7 +14,7 @@ body {
 
 h1 {
   font-size: 1.8em;
-  color: #fff;
+  color: #e2e1e1;
   margin-bottom: 50px;
   letter-spacing: -1px;
   text-transform: capitalize;

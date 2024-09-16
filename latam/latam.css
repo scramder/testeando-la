@@ -2,8 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #000;
-  color: azure;
+  background-color: #3d3935;
+  color: #e2e1e1;
 }
 .hero {
   height: 100vh;
@@ -13,3 +13,9 @@ body {
   align-items: center;
   background-color: black;
 }
+.nom {
+  display: flex;
+  flex-direction: row;
+
+}
+
