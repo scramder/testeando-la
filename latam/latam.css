@@ -16,6 +16,49 @@ body {
 .nom {
   display: flex;
   flex-direction: row;
+  padding: 5em;
+  margin: 5em;
+  background-color: #3d3935;
+  margin-bottom: auto;
+  position: relative;
 
 }
+.cram {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1em;
+  padding-right: 0.5em;
+}
 
+.container {
+/* Suggested code may be subject to a license. Learn more: ~LicenseLog:3378750043. */
+  font-size: 1em;
+  letter-spacing: 0.8em;
+  position: absolute;
+  opacity: 0; /* Inicialmente ocultas */
+  animation: fadeInOut 12s infinite; /* Duración total de la animación */
+}
+
+.dev { 
+  animation-delay: 0s; 
+}
+
+.des {
+  animation-delay: 3s;
+}
+
+.tech {
+  animation-delay: 6s;
+}
+
+.hum {
+  animation-delay: 9s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  8.33% { opacity: 1; } /* Aparece en 1 segundo (1/12 de la duración total) */
+  25% { opacity: 1; }  /* Permanece visible durante 3 segundos (3/12) */
+  33.33% { opacity: 0; } /* Desaparece en 1 segundo (1/12) */
+  100% { opacity: 0; } /* Permanece oculto el resto del tiempo */
+}
