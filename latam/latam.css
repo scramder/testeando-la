@@ -16,7 +16,7 @@ body {
 .nom {
   display: flex;
   flex-direction: row;
-  padding: 20vw;
+  padding: 10vw;
   background-color: #3d3935;
 
 }
@@ -106,37 +106,33 @@ body {
   color: black;
   font-style: italic; /* Cambia el estilo de la fuente a cursiva */
 }
-/* boton dw */
+
 .dw {
   width: 30px;
   height: 30px;
-  background-color: gray; 
-  border: none; 
-  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  border-radius: 50%; 
   position: relative;
-  margin: 20px auto; 
-  cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   transition: background-color 0.3s ease; 
 }
 
-.dw::before {
-  content: '>';
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) rotate(90deg); 
+.dw a { 
+  text-decoration: none; 
   color: white;
-  transition: color 0.3s ease;
+  display: inline-block;
+  transform: rotate(90deg); 
+  transition: color 0.3s ease; 
 }
 
 .dw:hover {
-  background-color: white; 
+  background-color: white;
 }
 
-.dw:hover::before {
-  color: black; 
+.dw:hover a {
+  color: black;
 }
-
-
-
-
