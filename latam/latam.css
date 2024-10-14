@@ -189,14 +189,14 @@ body {
 .pr01 h3, .pr02 h3, .pr03 h3 {
   margin-bottom: 10px;
 }
-/* Media query para tablets (ancho entre 768px y 1024px)
-@media (max-width: 1020px) {
-  .pr01, .pr02, .pr03 {
-    width: calc(25% - 10px); 
-  }
+.techstack img {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  width: 1.5em;
+  padding-top: 1em;
+  padding-left: 1em;
 }
-Media query para móviles (ancho menor a 768px)
-@media (max-width: 768px) {
-  .pr01, .pr02, .pr03 {
-    width: calc(40% - 20px); Ancho ajustado para móviles (ocupa todo el ancho) */
-  
