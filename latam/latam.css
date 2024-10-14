@@ -190,13 +190,15 @@ body {
   margin-bottom: 10px;
 }
 .techstack img {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
   width: 1.5em;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+.techstack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
 }
