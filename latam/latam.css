@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -136,3 +140,63 @@ body {
 .dw:hover a {
   color: black;
 }
+
+.projects {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  top: 0px;
+}
+
+.title{
+  width: 100%;
+  background-color: #3d3935;
+  color:#e2e1e1;
+  text-align: center;
+  letter-spacing: 0.8em;
+  height: 20vh;
+}
+/* Estilos para projects-container */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  padding: 5px;
+}
+
+/* Estilos para pr01, pr02, pr03 (y cualquier otro pr) */
+.pr01, .pr02, .pr03 {
+  width: calc(33% - 10px); /* Ancho ajustado para que quepan en una línea */
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #757575;
+  border-radius: 5px;
+  color: #e2e1e1;
+}
+
+.pr01 img, .pr02 img, .pr03 img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.pr01 h3, .pr02 h3, .pr03 h3 {
+  margin-bottom: 10px;
+}
+/* Media query para tablets (ancho entre 768px y 1024px)
+@media (max-width: 1020px) {
+  .pr01, .pr02, .pr03 {
+    width: calc(25% - 10px); 
+  }
+}
+Media query para móviles (ancho menor a 768px)
+@media (max-width: 768px) {
+  .pr01, .pr02, .pr03 {
+    width: calc(40% - 20px); Ancho ajustado para móviles (ocupa todo el ancho) */
+  
