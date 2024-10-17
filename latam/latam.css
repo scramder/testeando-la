@@ -194,6 +194,7 @@ body {
   padding-top: 0.5em;
   padding-left: 1em;
   padding-bottom: 0.5em;
+  transition: transform 0.3s ease;
 }
 .techstack {
   display: flex;
@@ -201,4 +202,7 @@ body {
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
+}
+.techstack img:hover {
+  transform: scale(1.2); /* Aumenta el tamaño en un 20% */
 }
