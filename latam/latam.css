@@ -206,3 +206,20 @@ body {
 .techstack img:hover {
   transform: scale(1.2); /* Aumenta el tamaño en un 20% */
 }
+.legend{
+  visibility: hidden; 
+  opacity: 0;
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s ease-in-out; 
+}
+.legend:hover {
+  visibility: visible;
+  opacity: 1;
+}
