@@ -114,7 +114,7 @@ body {
 .dw {
   width: 30px;
   height: 30px;
-  background-color: gray;
+  background-color: #3d3935;
   border: none;
   border-radius: 50%; 
   position: relative;
@@ -174,7 +174,7 @@ body {
   width: calc(33% - 10px); /* Ancho ajustado para que quepan en una línea */
   margin-bottom: 20px;
   text-align: center;
-  background-color: #757575;
+  background-color: #3d3935;
   border-radius: 5px;
   color: #e2e1e1;
 }
@@ -230,8 +230,59 @@ body {
   opacity: 1;
 }
 .legend p {
-  margin: 2;
+  text-align: start;
+  padding: 2em;
+  margin-left: -1.5em;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 9999;
 }
+
+
+
+ul {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4) inset;
+  border-radius: 16px;
+  margin: 0;
+  padding: 0 30px;
+}
+
+ul > li > a {
+  display: inline-block;
+  letter-spacing: -1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* The effect 
+-------------------------*/
+
+ul {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3em;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+ul > li {
+  float: left;
+  height: 100%;
+  list-style: none;
+  margin: 0 30px;
+}
+
+ul > li > a {
+  text-shadow: 0 -50px #cdf745;
+  padding-top: 50px;
+  margin-top: -50px;
+  transition: 0.25s cubic-bezier(0, 0, 0.5, 1.4);
+}
+
+ul > li > a:hover {
+  margin-top: 0;
+}
+
