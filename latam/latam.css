@@ -301,21 +301,20 @@ ul > li > a:hover {
 }
 
 .skill-category h3 {
-  font-size: 24px; /* Tamaño de fuente del título de categoría */
-  margin-bottom: 15px; /* Espacio inferior del título */
+  font-size: 24px;
+  margin-bottom: 15px;
   width:50%;
 }
 
 .skill-category .skills-list {
-  /* Elimina estilos de lista */
-  display: block; /* o flex, grid según tu diseño */ 
+  display: block;
   text-align: left;
 }
 
 .skill-category .skills-item {
   font-size: 18px;
   margin-bottom: 10px;
-  /* Otros estilos que necesites */
+
 }
 
 /* barritas */
@@ -336,7 +335,6 @@ ul > li > a:hover {
   transition: width 0.5s ease-in-out; /* Transición suave al cambiar el ancho */
 }
 
-/* Aplica el ancho de la barra de progreso según el atributo data-percent */
 [data-percent="90"] .progress { width: 90%; }
 [data-percent="80"] .progress { width: 80%; }
 [data-percent="70"] .progress { width: 70%; }
@@ -347,12 +345,73 @@ ul > li > a:hover {
 [data-percent="20"] .progress { width: 20%; }
 [data-percent="10"] .progress { width: 10%; }
 
-/* ... agrega más reglas para otros porcentajes ... */
-
 .description {
   font-size: 14px;
   color: #666; /* Color del texto de la descripción */
   margin-top: 5px; /* Espacio superior */
   text-indent: 20px
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+  background-color: #000000; /* O el color de fondo que prefieras */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre las columnas */
+}
+
+.social-media, .whatsapp-form {
+  width: 48%; /* Ajusta el ancho de las columnas según tus necesidades */
+  padding: 20px;
+  border-right: 1px solid #3d3935;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.social-links {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los enlaces se ajusten en varias líneas si es necesario */
+  justify-content: space-around;
+}
+
+.social-link {
+  margin: 10px;
+}
+
+.social-link img {
+  width: 32px; /* Ajusta el tamaño de los iconos según tus necesidades */
+  height: 32px;
+}
+
+/* Estilos para el formulario de WhatsApp */
+.whatsapp-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.whatsapp-form input, .whatsapp-form textarea {
+  width: 75%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.whatsapp-form button {
+  background-color: #4CAF50; /* O el color que prefieras para el botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para la advertencia */
+.disclaimer {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center; /* Centra el texto de la advertencia */
 }
 

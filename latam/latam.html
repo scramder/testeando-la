@@ -27,6 +27,8 @@
         </div>   
     </div>
 
+<!-- Sección de Proyectos -->
+
     <section class="projects" id="projects">
         <div class="title">
             <h2>PROYECTOS</h2>
@@ -100,6 +102,9 @@
         </div>        
         
     </section>
+
+    <!-- Sección de Habilidades -->
+
     <section class="skills" id="skills">
         <div class="title">
             <h2>HABILIDADES</h2>
@@ -209,13 +214,60 @@
         </div>
     </section>
     
+    <!-- Sección de Contacto -->
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>CONTACTO</h2>
+        </div>
+        <div class="contact-container">
+            <div class="social-media">
+                <h3>Redes Sociales</h3>
+                <div class="social-links"> 
+                    <div class="social-link">
+                        <a href="tu_enlace_de_instagram" target="_blank">
+                            <img src="icono_de_instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="tu_enlace_de_facebook" target="_blank">
+                            <img src="icono_de_facebook.png" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="social-link">
+                        <a href="tu_enlace_de_linkedin" target="_blank">
+                            <img src="icono_de_linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <!-- Agrega más elementos para otras plataformas -->
+                </div>
+            </div>
+            <div class="whatsapp-form">
+                <h3>Contacto Directo</h3>
+                <form id="formularioWhatsapp">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
     
-
-    <section class="contact" id="contact" >
-        <h2>Contacto</h2>
-        <p>Aquí va el formulario de contacto.</p>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required><br><br>
+    
+                    <label for="asunto">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" required><br><br>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+    
+                    <button type="submit">Enviar por WhatsApp</button>
+                </form>
+                <p class="disclaimer">
+                    Al hacer clic en "Enviar por WhatsApp", serás redirigido a WhatsApp y se compartirá tu número de teléfono con el destinatario.
+                </p>
+            </div>
+        </div>
     </section>
-
+    
+    
+    <script src="whatsapp.js"></script> 
 </body>
 </html>
 
